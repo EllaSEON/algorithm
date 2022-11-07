@@ -22,3 +22,12 @@ function solution(num_list) {
   let 홀수 = num_list.filter((data)=>data%2!==0).length;
   return [짝수,홀수]
 }
+
+//다른 사람 풀이
+function solution(num_list) {
+  let answer = [0, 0]
+  for (i of num_list){
+      answer[i % 2] += 1
+  }
+  return answer
+}
